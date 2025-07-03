@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFETERIA</title>
+
+    <link href="CAFETERIA_arquivos/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="CAFETERIA_arquivos/ESTILIZA%C3%87AO.css">
+</head>
+<body id="CORPO" class="bg-light">
+
+<header class="bg-dark text-white text-center py-4">
+    <h1 id="BEMVINDO">BEM-VINDO À COFFE-LAND</h1>
+
+    <div class="container mt-3">
+        <form class="row g-2 justify-content-center">
+            <div class="col-md-4">
+                <input class="form-control" type="text" placeholder="Procure o que deseja...">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-light">BUSCAR</button>
+            </div>
+        </form>
+
+        <nav class="mt-3">
+            <a class="text-white me-3" href="#">INÍCIO</a>
+            <a class="text-white me-3" href="#">CATEGORIAS</a>
+            <a class="text-white me-3" href="#">CONTATO</a>
+            <a class="text-white" href="#">PRODUTOS</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container my-4">
+    <img src="CAFETERIA_arquivos/ilustra%25C3%25A7%25C3%25A3o-de-arte-em-pixel-da-cafeteria-uma-um-a.webp" alt="COFFE COFFE" class="img-fluid rounded mx-auto d-block">
+
+    <div class="table-responsive my-4">
+        <table class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>NOME</th>
+                    <th>VALOR</th>
+                    <th>FOTO</th>
+                </tr>
+            </thead>
+            <tbody class="PRODUTOS">
+                
+                <tr>
+                    <td>CAPPUCCINO</td>
+                    <td>R$8,00</td>
+                    <td><img src="CAFETERIA_arquivos/Cappuccino-1.webp" alt="" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <td>AMERICANO</td>
+                    <td>R$2,00</td>
+                    <td><img src="CAFETERIA_arquivos/Depositphotos_12639245_S.jpg" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <td>ITALIANO</td>
+                    <td>R$5,00</td>
+                    <td><img src="CAFETERIA_arquivos/cafe-italiano-2-1024x683.png" width="150" height="150"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form class="bg-white p-4 rounded shadow-sm">
+        <div class="mb-3">
+            <label class="form-label">NOME:</label>
+            <input type="text" class="form-control" placeholder="Coloque o seu nome">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">ASSUNTO:</label>
+            <input type="text" class="form-control" placeholder="Descreva...">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">EMAIL:</label>
+            <input type="email" class="form-control" placeholder="Coloque o seu email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">MENSAGEM:</label>
+            <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </div>
+
+        <button class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <ul class="list-unstyled d-flex justify-content-center mb-3">
+        <li class="mx-3"><a class="text-white text-decoration-none" href="https://web.whatsapp.com/">WHATSAPP</a></li>
+        <li class="mx-3"><a class="text-white text-decoration-none" href="https://www.facebook.com/?locale=pt_BR">NOSSO FACEBOOK</a></li>
+        <li class="mx-3"><a class="text-white text-decoration-none" href="https://www.instagram.com/">NOSSO INSTAGRAM</a></li>
+    </ul>
+    <p>© 2025 Coffe-land. Todos os direitos reservados.</p>
+</footer>
+
+
+<script src="CAFETERIA_arquivos/bootstrap.bundle.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
